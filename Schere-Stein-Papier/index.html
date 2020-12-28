@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Schere-Stein-Papier">
+    <link rel="stylesheet" type="text/css" href="./_css/styles.css">
+    <title>Schere-Stein-Papier</title>
+</head>
+<body>
+    <header>
+        <nav>
+        </nav>
+    </header>
+    <main>
+        <h2>scissors, rock, paper <span class="smaller">v.1.1</span></h2>        
+    <article>
+        <section>
+            <form class="btn-selections" id="btns">
+                <label for="btn-scissors">
+                    <button type="button" class="btn-selection" value="0" onclick="checkSymbol(value)">
+                        <img src="./_img/scissors.svg" alt="scissors">
+                    </button>
+                </label>
+                <label for="btn-rock">
+                    <button type="button" class="btn-selection" value="1" onclick="checkSymbol(value)">
+                        <img src="./_img/rock.svg" alt="rock">
+                    </button>
+                </label>
+                <label for="btn-paper">
+                    <button type="button" class="btn-selection" value="2" onclick="checkSymbol(value)">
+                        <img src="./_img/paper.svg" alt="paper">
+                    </button>
+                </label>
+            </form>
+            <div class="results">       
+                <div class="result">
+                    <h6>
+                        USER:
+                        <span id="scoreUSER">0</span>
+                    </h6>
+                </div>
+                <div class="result">
+                    <h6>
+                        CPU:
+                        <span id="scoreCPU">0</span>
+                    </h6>
+                </div>
+                <div class="result-selection" id="resultUSER">
+                    <img src="./_img/default.svg">
+                </div>
+                <div class="result-selection" id="resultCPU">
+                    <img src="./_img/default.svg">
+                </div>
+            </div>
+            <div class="result-sub">
+                <div>
+                    <h6>
+                        ROUND: 
+                        <span id="rounds">1</span>
+                    </h6>
+                </div>       
+                <div>
+                    <button type="button" onclick="resetGame()"><h6>Reset Game</h6></button>
+                </div>
+            </div>
+        </section>
+    </article>    
+    <div>
+        <h2 id="left" class="dnone">#</h2>
+        <h2 id="right" class="dnone">reset game!</h2>
+    </div>    
+    </main>
+    <footer>
+    </footer> 
+    <script src="./_js/script.js"></script>
+</body>
+</html>
