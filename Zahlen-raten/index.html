@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="guess-the-number">
+    <link rel="stylesheet" type="text/css" href="./_css/styles.css">
+    <title>guess-the-number</title>
+</head>
+<body>
+    <header>
+        <nav>
+        </nav>
+    </header>
+    <main>
+        <h2>guess-the-number <span class="smaller">v.1.1</span></h2>        
+    <article>
+        <section>
+            <form name="input">
+                <label for="maxNumbers">
+                    <input type="text" id="maxNumber" name="maxNumber" placeholder="maxNumber here" class="">
+                    <input type="text" id="maxRounds" name="maxRounds" placeholder="maxRounds here" class="">
+                    <input type="text" id="guessNumber" name="guessNumber" placeholder="guessNumber here" class="dnone">
+                </label>
+                <div id="start" class="">
+                    <h6>time to play!<br> please set the highest number & rounds.</h6>
+                </div>
+                <div id="notValid" class="dnone">
+                    <h6>stop! please<br>provide the inputs<br>as a numbers!</h6>
+                </div>
+                <div id="valid" class="dnone">
+                    <h6>your inputs are valid!<br>cpu set a number.<br><i>guess which one?</i></h6>
+                </div>
+                <div id="end" class="dnone">
+                    <h6>game ends!</h6>
+                </div>
+                <button type="button" id="btn1" onclick="checkInput()" class="">check this!</button>
+                <button type="button" id="btn2" onclick="guess()" class="dnone">guess this!</button>  
+            </form>
+        </section>
+    </article>    
+    <div>
+        <h2 id="left" class="dnone">guess the number</h2>
+        <h2 id="right" class="dnone" onclick="resetGame()">reset game!</h2>
+    </div>    
+    </main>
+    <footer>
+    </footer> 
+    <script src="./_js/script.js"></script>
+</body>
+</html>
