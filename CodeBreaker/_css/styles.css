@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    scroll-behavior: smooth;
+}
+:root {
+    /* theme color */
+    --c1: rgba(255,255,0,1);
+    --c2: rgba(0,0,0,1);
+    --c3: rgba(255,255,255,1);
+}
+body {
+    background-color: var(--c2);
+}
+h2 {
+    font-size: 75%;
+    padding: .15rem;
+    color: var(--c3);
+}
+.smaller {
+    font-size: 50%;
+}
+article {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -62.5px;
+    margin-left: -62.5px;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 125px;
+    background-color: var(--c3);
+    border-radius: 10px;
+    box-shadow: 0px 0px 35px 0px var(--c3);
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+input[type="text"] {
+    width: 25px;
+    text-align: center;
+    margin: .2rem;
+}
+#btn {
+    cursor: pointer;
+    margin: .2rem;
+}
+.randomCode, .instruct {
+    text-align: center;
+    padding: .2rem;
+    line-height: 75%;
+}
+.instruct-smaller {
+    font-size: 65%;
+}
+.guessed {
+    text-align: center;
+    font-size: 45%;
+}
+.guessedCodes {
+    background-color: rgba(0,0,0,0.05);
+    font-size: 45%;
+    height: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 1px;
+    justify-items: center; 
+    align-content: center;
+    color: red;
+}
+.color-red {
+    color: red;
+}
+.color-orange {
+    color: orange;
+}
+.color-green {
+    color: green;
+}
+.no-select {
+    pointer-events: none;
+}
+.dnone {
+    display: none !important;
+}
+#left {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+#right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+#right:hover {
+    color: var(--c1);
+    cursor: pointer;
+}
+#output {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+#output:hover {
+    color: var(--c1);
+    cursor: pointer;
+}
+#box {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.9);
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--c3);
+    cursor: pointer;
+}
+#btnclose {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

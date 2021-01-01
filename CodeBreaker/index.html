@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="code-breaker">
+    <link rel="stylesheet" type="text/css" href="./_css/styles.css">
+    <title>code-breaker</title>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+    <div id="box" class="dnone">
+        <div class="popup">
+            <h2>Break the Code!</h2>
+            <ul class="smaller">
+                <i>
+                    <li>you only have 12 rounds to break through.</li>
+                    <li><span class="color-red">red</span> / wrong number</li>
+                    <li><span class="color-orange">orange</span> / right number, but wrong position</li>
+                    <li><span class="color-green">green</span> / right number right position</li>
+                    <li>good luck & have fun!</li>
+                    <p><br></p>
+                    <p id="btnclose"></p>
+                </i>
+            </ul>
+        </div>
+    </div>
+    <h2>code-breaker<span class="smaller">v.1.1</span></h2>        
+    <article>
+        <section>
+            <div class="instruct">Break The Code! <br><span class="instruct-smaller"><i>12 rounds to try!</i></span></div>
+            <form id="formAll">
+                <input type="text" maxlength="1" id="stDigit" name="stDigit" placeholder="1st"> -
+                <input type="text" maxlength="1" id="ndDigit" name="ndDigit" placeholder="2nd"> -
+                <input type="text" maxlength="1" id="rdDigit" name="rdDigit" placeholder="3rd">
+                <button type="button" id="btn" name="btn-select" class="btn-select">check this!</button>
+            </form>
+            <div class="guessed">guessed Codes:</div>
+            <div class="guessedCodes"></div>
+        </section>
+    </article>    
+    <div>
+        <h2 id="left">intentos: <span class="rounds">0</span></h2>
+        <h2 id="right">reset game!</h2>
+        <h2 id="output">rules?</h2>
+    </div>    
+    </main>
+    <footer>
+    </footer> 
+    <script src="./_js/script.js"></script>
+</body>
+</html>
