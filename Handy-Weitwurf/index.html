@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="long-throw">
+    <meta name="author" content="phil.ziegelbauer">
+    <meta name="copyright" content="phil.ziegelbauer">
+    <link rel="stylesheet" type="text/css" href="./_css/styles.css">
+    <title>long-throw</title>
+</head>
+<body>
+    <header>
+        <nav>
+        </nav>
+    </header>
+    <main>
+        <h2>long-throw<span class="smaller">v.1.1</span></h2>        
+    <article>
+        <section>
+            <div class="instruct">throw it! <br><span class="instruct-smaller"><i>choose speed & degrees <br>& hit the monster!</i></span></div>
+           
+            <form class="smallest" id="formAll">
+
+                <input type="radio" id="gEarth" name="gPlanet" checked value="0">
+                <label for="gEarth">gEarth</label>
+                
+                <input type="radio" id="gMoon" name="gPlanet" value="1">
+                <label for="gMoon">gMoon</label>
+
+                <input type="radio" id="gMars" name="gPlanet" value="2">
+                <label for="gMars">gMars</label>
+
+                <input type="radio" id="gJupiter" name="gPlanet" value="3">
+                <label for="gJupiter">gJupiter</label>
+                
+                <label for="degrees">degrees:</label>
+                <input type="range" min="1" max="89" value="45" step="1" class="degreeRange" id="degreeRange">
+                <span id="outputDegrees">value:</span>
+
+                <label for="speed">speed:</label>
+                <input type="range" min="1" max="99" value="50" step="1" class="speedRange" id="speedRange">
+                <span id="outputSpeed">value:</span>
+                
+                <button type="button" id="btnStart">check this!</button>
+               
+            </form>
+        </section>
+    </article>    
+    <div>
+        <h2 id="left">monster appears <br><span class="monsterAppear">###</span> meters away!</h2>
+        <h2 id="right">reset game!</h2>
+        <h2 id="topright">round: <span class="rounds">1</span><br><span class="smaller" id="maxRoundCount">#</span></h2>
+    </div>    
+    </main>
+    <footer>
+    </footer> 
+    <script src="./_js/script.js"></script>
+</body>
+</html>
