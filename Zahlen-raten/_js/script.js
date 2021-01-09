@@ -45,11 +45,15 @@ function guess() {
 
     left.classList.remove("dnone");
     if (guessedNumber == randomNumber) {
-        left.innerHTML = "you guessed the right number!";
+        left.innerHTML = "you guessed the<br> right number!";
         right.classList.remove("dnone");
+        left.classList.remove("color-red");
+        left.classList.add("color-green");
         btn2.classList.add("no-select");
     } else {
         left.innerHTML = "you guessed wrong!<br> try again!";
+        left.classList.add("color-red");
+        left.classList.remove("color-green");
         count++;            
     }
     console.log(count);
