@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="hammurabi">
+    <meta name="author" content="phil.ziegelbauer">
+    <meta name="copyright" content="phil.ziegelbauer">
+    <link rel="stylesheet" type="text/css" href="./_css/styles.css">
+    <title>hammurabi</title>
+</head>
+<body> 
+    <header>
+    </header>
+    <main>
+    <div id="box" class="dnone">
+        <div class="popup">
+            <h2>hammurabi!</h2>
+            <ul class="smaller popup">
+                <i>
+                    <li>instruction here</li>
+                    <li><span class="color-red">?</span> & game rules</li>
+                    <li>good luck & have fun!</li>
+                    <p><br></p>
+                    <p id="btnclose"></p>
+                </i>
+            </ul>
+        </div>
+    </div>
+    <h2>hammurabi<span class="smaller">v.1.1</span></h2>        
+    <article>
+        <section>
+
+            <div class="instruct">reign the empire!</div>
+            <form id="formAll">
+
+                
+                <div class="grid-status">
+                    <div class="grid-status-item"><p>corn: <br><b><span id="cornAmount">6000</span></b></p></div>
+                    <div class="grid-status-item"><p>citizen: <br><b><span id="citizenAmount">100</span></b></p></div>
+                    <div class="grid-status-item"><p>farmLand: <br><b><span id="farmLand">400</span></b></p></div>
+                    <div class="grid-status-item"><p>landPrice: <br><b><span id="landPrice">5</span></b></p></div>
+                    <div class="grid-status-item"><p>year: <br><b><span id="year">2021</span></b></p></div>
+                </div>
+
+                <div class="instruct-smaller">
+
+                    <legend>feedCitizen with corn: </legend>
+                        <input type="range" min="0" max="1000" value="0" step="1" name="feedCitzienAmount" id="feedCitzienAmount">
+                        <output id="outputFeedCitzienAmount">0</output>
+                   
+                    <legend>farmLand with corn: </legend>
+                    <input type="range" min="0" max="1000" value="0" step="1" name="farmCornAmount" id="farmCornAmount">
+                    <output id="outputFarmCornAmount">0</output>
+
+                    <legend>buy or sell farmLand: </legend>
+                    <input type="range" min="-1000" max="1000" value="0" step="1" name="realizeFarmLand" id="realizeFarmLand">
+                    <output id="outputRealizeFarmLand">0</output>
+
+                    <button type="button" id="btn" name="btn-select" class="btn-select">set this year!</button>
+
+                </div>
+
+            </form>
+
+        </section>
+    </article>    
+    <div>
+        <h2 id="left">year: <span class="year">2021</span></h2>
+        <h2 id="right">reset game!</h2>
+        <h2 id="rules">rules?</h2> 
+    </div>    
+    </main>
+    <footer>
+    </footer> 
+    <script src="./_js/script.js"></script>
+</body>
+</html>

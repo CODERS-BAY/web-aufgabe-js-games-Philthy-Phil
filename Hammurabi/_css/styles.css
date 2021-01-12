@@ -22,7 +22,7 @@ h2 {
 .smaller {
     font-size: 50%;
 }
-.pop {
+.popup {
     font-size: 120%;
 }
 article {
@@ -45,42 +45,80 @@ article {
 form {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 125px;
+    height: auto;
     justify-content: center;
     align-items: center;
+
+    border: 1px solid red;
 }
-input[type="text"] {
-    width: 25px;
-    text-align: center;
-    margin: .2rem;
+
+
+/* get rid of default range styling */
+input[type="range"],
+input[type="range"]:focus {
+    -webkit-appearance: none;
+    width: 100px;
 }
-#btn {
+
+/* styling track */
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-moz-range-track {
+    background: rgba(0,0,0,0.1);
+    height: 1px;
     cursor: pointer;
-    margin: .2rem;
 }
+/* styling thumb */
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 5px;
+    width: 5px;
+    background: black;
+    margin-top: -5px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-select {
+    font-size: 100%;
+    cursor: pointer;
+}
+   
+.grid-status {
+    display: grid;
+    width: 100%;
+    height: auto;
+
+    text-align: center;   
+    align-content: center;
+    justify-content: center;
+    
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100%;
+    font-size: 30%;
+}
+.grid-status-item {
+    padding: .2rem;
+}
+.grid-status-item:nth-child(even) {
+    background-color: rgba(0,0,0,0.4);    
+}
+.grid-status-item:nth-child(odd) {
+    background-color: rgba(0,0,0,0.1);    
+}
+
 .randomCode, .instruct {
     text-align: center;
     padding: .2rem;
     line-height: 75%;
 }
 .instruct-smaller {
-    font-size: 65%;
-}
-.guessed {
+    font-size: 35%;
     text-align: center;
-    font-size: 45%;
 }
-.guessedCodes {
-    background-color: rgba(0,0,0,0.05);
-    font-size: 45%;
-    height: 30px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: 1px;
-    justify-items: center; 
-    align-content: center;
-    color: red;
-}
+
 .color-red {
     color: red;
 }
@@ -110,12 +148,12 @@ input[type="text"] {
     color: var(--c1);
     cursor: pointer;
 }
-#output {
+#rules {
     position: fixed;
     top: 0;
     right: 0;
 }
-#output:hover {
+#rules:hover {
     color: var(--c1);
     cursor: pointer;
 }
