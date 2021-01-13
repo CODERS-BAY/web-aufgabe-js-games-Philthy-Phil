@@ -33,14 +33,16 @@
 
             <div class="instruct">reign the empire!</div>
             <form id="formAll">
-
                 
                 <div class="grid-status">
                     <div class="grid-status-item"><p>corn: <br><b><span id="cornAmount">6000</span></b></p></div>
                     <div class="grid-status-item"><p>citizen: <br><b><span id="citizenAmount">100</span></b></p></div>
                     <div class="grid-status-item"><p>farmLand: <br><b><span id="farmLand">400</span></b></p></div>
                     <div class="grid-status-item"><p>landPrice: <br><b><span id="landPrice">5</span></b></p></div>
-                    <div class="grid-status-item"><p>year: <br><b><span id="year">2021</span></b></p></div>
+                </div>
+
+                <div class="area">                    
+                    <p>make your choices and set this year!</p>
                 </div>
 
                 <div class="instruct-smaller">
@@ -57,16 +59,16 @@
                     <input type="range" min="-1000" max="1000" value="0" step="1" name="realizeFarmLand" id="realizeFarmLand">
                     <output id="outputRealizeFarmLand">0</output>
 
-                    <button type="button" id="btn" name="btn-select" class="btn-select">set this year!</button>
-
                 </div>
-
+                
+                <button type="button" id="btn" name="btn-select" class="btn-select">set this year!</button>
+                
             </form>
 
         </section>
     </article>    
     <div>
-        <h2 id="left">year: <span class="year">2021</span></h2>
+        <h2 id="left">year: <span id="year">2021</span></h2>
         <h2 id="right">reset game!</h2>
         <h2 id="rules">rules?</h2> 
     </div>    

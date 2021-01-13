@@ -49,23 +49,52 @@ form {
     height: auto;
     justify-content: center;
     align-items: center;
-
-    border: 1px solid red;
 }
-
-
+#outputFeedCitzienAmount,
+#outputFarmCornAmount,
+#outputRealizeFarmLand {
+    float: right;
+    text-align: center;
+    padding-top: .25rem;
+    width: 15px !important;   
+}
+legend {
+    padding: .1rem;
+    height: 5px;
+}
+.area {
+    width: 60px;
+    height: 65px;
+    margin-right: .3rem;
+    background-color: rgba(0,0,0,1);
+    color: white;
+    font-size: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: .2rem;
+}
+.area p {
+    padding: .2rem;
+}
+.btn-select {
+    font-size: 45%;
+    margin: .1rem;
+    cursor: pointer;
+}
 /* get rid of default range styling */
 input[type="range"],
 input[type="range"]:focus {
     -webkit-appearance: none;
-    width: 100px;
+    width: 35px;
 }
-
 /* styling track */
 input[type="range"]::-webkit-slider-runnable-track,
 input[type="range"]::-moz-range-track {
     background: rgba(0,0,0,0.1);
-    height: 1px;
+    height: .75px;
     cursor: pointer;
 }
 /* styling thumb */
@@ -79,23 +108,15 @@ input[type="range"]::-moz-range-thumb {
     border-radius: 50%;
     border: none;
     cursor: pointer;
-}
-
-.btn-select {
-    font-size: 100%;
-    cursor: pointer;
-}
-   
+}  
 .grid-status {
     display: grid;
     width: 100%;
     height: auto;
-
     text-align: center;   
     align-content: center;
-    justify-content: center;
-    
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: center;  
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 100%;
     font-size: 30%;
 }
@@ -108,7 +129,6 @@ input[type="range"]::-moz-range-thumb {
 .grid-status-item:nth-child(odd) {
     background-color: rgba(0,0,0,0.1);    
 }
-
 .randomCode, .instruct {
     text-align: center;
     padding: .2rem;
@@ -117,8 +137,8 @@ input[type="range"]::-moz-range-thumb {
 .instruct-smaller {
     font-size: 35%;
     text-align: center;
+    height: 68px;
 }
-
 .color-red {
     color: red;
 }
