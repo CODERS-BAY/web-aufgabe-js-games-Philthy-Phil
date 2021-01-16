@@ -67,6 +67,7 @@ legend {
     height: 65px;
     margin-right: .3rem;
     background-color: rgba(0,0,0,1);
+    border-radius: 10px;
     color: white;
     font-size: 50%;
     display: flex;
@@ -133,6 +134,9 @@ input[type="range"]::-moz-range-thumb {
     text-align: center;
     padding: .2rem;
     line-height: 75%;
+}
+.instruct {
+    font-size: 90%;
 }
 .instruct-smaller {
     font-size: 35%;
