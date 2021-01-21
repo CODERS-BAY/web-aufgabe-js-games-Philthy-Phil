@@ -31,11 +31,11 @@ function gameLandPrice() {
     }
 }
 
-function gameEndYearCondition() {
+function gameEndCondition() {
     yearCount++;
     year.innerHTML = yearCount;
 
-    if(yearCount == 2021 + 20) {
+    if(yearCount == 2021 + 20 || citizenAmound < 1 || farmLand < 1) {
         btn.classList.add("no-select");
     }
 }
@@ -63,5 +63,5 @@ function closeRules() {
 }
 
 function resetGame() {
-    window.location.href=window.location.href;
+    window.location.reload();
 }
